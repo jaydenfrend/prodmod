@@ -1,27 +1,27 @@
 //Hacks! credit to https://github.com/PatheticMustan !
 function getallitems() {
-    a=["outfit", "hat", "boots", "weapon"]
+    var a = ["outfit", "hat", "boots", "weapon"];
     for (u in a) {
-        PIXI.game.prodigy.player.backpack.data[u]=[]
-        x = PIXI.game.state.states.Boot._gameData[u]
+        PIXI.game.prodigy.player.backpack.data[u] = [];
+        x = PIXI.game.state.states.Boot._gameData[u];
         for (i in x) {
-            PIXI.game.prodigy.player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1}
+            PIXI.game.prodigy.player.backpack.data[u][i] = {"ID": x[i].ID, "N": 1};
         }
     }
-    PIXI.game.prodigy.player.backpack.data.currency=[]
-    x = PIXI.game.state.states.Boot._gameData.currency
+    PIXI.game.prodigy.player.backpack.data.currency = [];
+    x = PIXI.game.state.states.Boot._gameData.currency;
     for (i in x) {
         PIXI.game.prodigy.player.backpack.data.currency[i] = {"ID": x[i].ID, "N": 99999999}
     }
-    PIXI.game.prodigy.player.backpack.data.follow=[];
+    PIXI.game.prodigy.player.backpack.data.follow = [];
     x = PIXI.game.state.states.Boot._gameData.follow;
     for (i in x) {
-        PIXI.game.prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID}
+        PIXI.game.prodigy.player.backpack.data.follow[i] = {"ID": x[i].ID};
     }
-    PIXI.game.prodigy.player.backpack.data.item=[]
-    x = PIXI.game.state.states.Boot._gameData.item
+    PIXI.game.prodigy.player.backpack.data.item = [];
+    x = PIXI.game.state.states.Boot._gameData.item;
     for (i in x) {
-        PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999}
+        PIXI.game.prodigy.player.backpack.data.item[i] = {"ID": x[i].ID, "N": 99999999};
     }
 }
 
@@ -30,7 +30,7 @@ function getallpets() {
 }
 
 function makemember() {
-    PIXI.game.prodigy.player.tt=true
+    PIXI.game.prodigy.player.tt=true;
 }
 
 function infinitewheelofwonderchances() {
@@ -38,10 +38,10 @@ function infinitewheelofwonderchances() {
 }
 
 function getallfossils() {
-    PIXI.game.prodigy.player.backpack.data.fossil=[]
-    x = PIXI.game.state.states.Boot._gameData.fossil
+    PIXI.game.prodigy.player.backpack.data.fossil = [];
+    x = PIXI.game.state.states.Boot._gameData.fossil;
     for (i in x) {
-    PIXI.game.prodigy.player.backpack.data.fossil[i] = {"ID": x[i].ID, "N": 1}
+        PIXI.game.prodigy.player.backpack.data.fossil[i] = {"ID": x[i].ID, "N": 1};
     }
 }
 
@@ -59,8 +59,8 @@ function unlockallzones() {
 
 function teleporttomousepointer() {
     window.addEventListener('keydown', (event) => {
-        PIXI.game.prodigy.user.x=PIXI.game.input.mousePointer.position.x
-        PIXI.game.prodigy.user.y=PIXI.game.input.mousePointer.position.y;
+        PIXI.game.prodigy.user.x = PIXI.game.input.mousePointer.position.x;
+        PIXI.game.prodigy.user.y = PIXI.game.input.mousePointer.position.y;
     });
 }
 
@@ -72,7 +72,7 @@ function upgradeheartbonus() {
     }
 }
 function getallrelics() {
-    PIXI.game.prodigy.player.backpack.data.spellRelic=[];
+    PIXI.game.prodigy.player.backpack.data.spellRelic = [];
     x = PIXI.game.state.states.Boot._gameData.spellRelic;
     for (i in x) {
         PIXI.game.prodigy.player.backpack.data.spellRelic[i] = {"ID": x[i].ID, "N": 1};
@@ -86,7 +86,7 @@ function greedisgood() {
 }
 function gainpetstars() {
     for (let PetLoopTest = 0; PetLoopTest < PIXI.game.prodigy.player.kennel.data.length; PetLoopTest++) { 
-        PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=100
+        PIXI.game.prodigy.player.kennel.data[PetLoopTest].level=100;
     };
 }
 function getmaxconjurecubes() {
@@ -105,7 +105,7 @@ function getrich() {
         PIXI.game.prodigy.debugMisc.grabBag(50);
     }
     //Sets the amount of all your currencies to 9 million.
-    x = PIXI.game.prodigy.player.backpack.data.item
+    x = PIXI.game.prodigy.player.backpack.data.item;
     for (i in x) {
         x[i] = {"ID": x[i].ID, "N": 9000000}
     }
@@ -132,5 +132,4 @@ function ALLOFTHEM() {
 //function () {
 //
 //}
-
 
