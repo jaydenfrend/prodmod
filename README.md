@@ -2,6 +2,7 @@
 Prodigy game modding tools (play.prodigygame.com)
 # !!IMPORTANT!!
 NEVER use prodmod your main prodigy account! you will likely be banned if you do!
+Currently, The prodigy team is fighting back!! I need YOUR help to make new cheats!!
 # Installation
 ## to install prodmod, you have to do a few things first.
 ## Console meathod:
